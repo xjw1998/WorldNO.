@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+今天是<script language="javascript">
+           var mydate=new Date();
+           var mymonth=mydate.getMonth()+1;
+           var myday= mydate.getDate();
+           var myyear= mydate.getYear();
+           document.write(myyear+"-"+mymonth+"-"+myday);</script>，欢迎访问徐佳文的网页
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>徐佳文的主页</title>
+<script>
+//页面加载时执行的函数
+function showEnter(){
+	alert("欢迎来到徐佳文de主页");
+}
+//页面加载页面出发时调用函数
+window.onload=showEnter;
+</script>
+
+</head>
+
+<body>
+<script>
+var Tname="欢迎您的到来！";
+var Tlen=Tname.length;
+document.write("<div id='a' style='font-size:40px;'>"+Tname+"</div>");
+var col=new Array("#FFCC00","#3333FF","#FFCC00","#FF0000","#FFCC00","#CC33FF");
+var ic=0;
+function Dcolor(){
+  var Strname="";
+  for (i=0;i<Tlen;++i){
+    var Strname=Strname+"<font color="+col[ic]+">"+Tname.substring(i,i+1)+"</font>";
+	ic=ic+1;
+  	if (ic==col.length) ic=0;
+  }
+  a.innerHTML=Strname;
+  setTimeout("Dcolor()",200);
+}
+Dcolor();
+</script>
+<span class="style5"></span>
+<img src="5.jpg" width="1071" height="746" usemap="#Map" border="0" />
+<map name="Map" id="Map">
+  <area shape="rect" coords="1,1,1073,740" href="自我简介.html" />
+</map>
+<form name=loading> 
+　<p align=center> <font color="#0066ff" size="2">正在进入，请稍等</font><font color="#0066ff" size="2" face="Arial">...</font>
+　　<input type=text name=chart size=46 style="font-family:Arial; font-weight:bolder; color:#0066ff; background-color:#fef4d9; padding:0px; border-style:none;"> 
+　　
+　　<input type=text name=percent size=47 style="color:#0066ff; text-align:center; border-width:medium; border-style:none;"> 
+　　
+<script>　 
+var bar=0　 
+var line="||"　 
+var amount="||"　 
+count()　 
+function count(){　 
+bar=bar+2　 
+amount =amount + line　 
+document.loading.chart.value=amount　 
+document.loading.percent.value=bar+"%"　 
+if (bar<99)　 
+{setTimeout("count()",100);}　 
+else　 
+{window.location = "";}　 
+}</script> 
+　</a></p> 
+</form> 
+<p align="center"> 如果您的浏览器不支持跳转,<a style="text-decoration: none" href="自我简介.html"><font color="#FF0000">请点这里</font></a>.</p>
+
+</body>
+</html>
